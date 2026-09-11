@@ -1,6 +1,7 @@
 import math
 import random
 from datetime import date
+from app.data.generators.calendar_behavior import calendar_multiplier
 
 
 WEEKDAY_MULTIPLIERS = {
@@ -104,6 +105,9 @@ def demand_multiplier(
     business_area: float = 0.0,
     residential_area: float = 0.0,
     student_area: float = 0.0,
+    holiday_type: str | None = None,
+    holiday_importance: float = 0.0,
+    religious_period: str | None = None,
 ) -> float:
 
     multiplier = 1.0
@@ -112,6 +116,12 @@ def demand_multiplier(
     multiplier *= outlet_multiplier(outlet_type)
     multiplier *= product_multiplier(category)
     multiplier *= seasonal_multiplier(day)
+    multiplier *= calendar_multiplier(
+        day=day,
+        holiday_type=holiday_type,
+        holiday_importance=holiday_importance,
+        religious_period=religious_period,
+    )
 
     multiplier *= location_multiplier(
         location_type=location_type,
