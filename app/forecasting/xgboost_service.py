@@ -7,8 +7,28 @@ from app.models.xgboost_model import XGBoostDemandModel
 
 class XGBoostForecastService:
 
+    EXCLUDED_FEATURES = {
+        "quantity_sold",
+        "revenue",
+        "date",
+        "outlet_id",
+        "product_id",
+        "unit",
+    }
+
     def __init__(self):
         self.model = XGBoostDemandModel()
+
+    def _feature_columns(
+        self,
+        dataset: pd.DataFrame,
+    ) -> list[str]:
+
+        return [
+            column
+            for column in dataset.columns
+            if column not in self.EXCLUDED_FEATURES
+        ]
 
     def train(
         self,
@@ -16,19 +36,9 @@ class XGBoostForecastService:
         target_column: str = "quantity_sold",
     ):
 
-        excluded = {
-            target_column,
-            "date",
-            "outlet_id",
-            "product_id",
-            "unit",
-        }
-
-        feature_columns = [
-            column
-            for column in dataset.columns
-            if column not in excluded
-        ]
+        feature_columns = self._feature_columns(
+            dataset
+        )
 
         train_df = dataset.dropna(
             subset=feature_columns
@@ -38,7 +48,10 @@ class XGBoostForecastService:
         X = train_df[feature_columns]
         y = train_df[target_column]
 
-        self.model.fit(X, y)
+        self.model.fit(
+            X,
+            y,
+        )
 
         return self.model
 
@@ -46,20 +59,6 @@ class XGBoostForecastService:
         self,
         dataset: pd.DataFrame,
     ):
-
-        excluded = {
-            "quantity_sold",
-            "date",
-            "outlet_id",
-            "product_id",
-            "unit",
-        }
-
-        feature_columns = [
-            column
-            for column in dataset.columns
-            if column not in excluded
-        ]
 
         X = dataset[
             self.model.feature_columns
