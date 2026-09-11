@@ -1,0 +1,131 @@
+outlet_id,outlet_type,country,region,city,latitude,longitude,location_type,cuisine,capacity,delivery_available,takeaway_available,bar_available,kitchen_type,tourism_level,business_area,residential_area,student_area
+O001,restaurant,India,India,Hyderabad,-12.959733,-82.324759,tourist,Indian,74,True,True,False,standard,0.03,0.219,0.505,0.027
+O002,delivery_kitchen,USA,USA,Chicago,-15.160344,39.101735,university,International,33,True,False,False,central,0.698,0.34,0.155,0.957
+O003,restaurant,UK,UK,Manchester,-0.806543,-23.075567,business,American,165,True,False,False,delivery,0.536,0.973,0.379,0.552
+O004,delivery_kitchen,UK,UK,Birmingham,28.411465,-107.627416,residential,Italian,178,True,False,False,central,0.866,0.38,0.453,0.834
+O005,restaurant_bar,USA,USA,New York,-16.144367,-47.915988,tourist,Arabic,66,True,True,True,central,0.534,0.245,0.462,0.27
+O006,bar,Saudi Arabia,Saudi Arabia,Jeddah,40.856673,89.519976,tourist,Italian,46,False,False,True,delivery,0.268,0.211,0.943,0.876
+O007,bar,UK,UK,Manchester,0.606871,126.927849,university,Chinese,103,False,True,True,central,0.745,0.539,0.747,0.428
+O008,restaurant_bar,UAE,UAE,Dubai,54.75932,-82.650429,residential,Chinese,76,True,False,True,standard,0.153,0.16,0.68,0.596
+O009,cloud_kitchen,UAE,UAE,Dubai,54.650924,22.860873,mixed,Mexican,35,True,True,False,standard,0.682,0.537,0.267,0.641
+O010,restaurant_bar,India,India,Hyderabad,-20.765802,-119.123765,university,Arabic,164,True,False,True,central,0.508,0.106,0.625,0.842
+O011,delivery_kitchen,Saudi Arabia,Saudi Arabia,Riyadh,-21.244466,85.877916,residential,Mexican,30,True,True,False,delivery,0.019,0.929,0.879,0.832
+O012,bar,UK,UK,London,-13.321557,33.186375,business,Indian,73,False,True,True,standard,0.978,0.533,0.126,0.66
+O013,bar,Saudi Arabia,Saudi Arabia,Jeddah,12.490641,43.780358,tourist,Italian,132,False,True,True,delivery,0.995,0.65,0.438,0.518
+O014,bar,India,India,Hyderabad,-29.237669,-114.32075,residential,Mexican,147,False,True,True,standard,0.071,0.631,0.229,0.905
+O015,restaurant,UK,UK,Manchester,-13.579583,60.624,mixed,Italian,97,True,True,False,delivery,0.243,0.473,0.407,0.094
+O016,restaurant_bar,UAE,UAE,Abu Dhabi,1.999205,113.235922,university,Indian,80,True,True,True,cloud,0.801,0.109,0.192,0.536
+O017,cloud_kitchen,India,India,Pune,-9.930937,-52.552259,residential,Indian,256,True,False,False,standard,0.051,0.999,0.836,0.969
+O018,bar,USA,USA,Los Angeles,8.707701,-62.288229,university,Chinese,60,False,True,True,standard,0.985,0.265,0.784,0.455
+O019,delivery_kitchen,UAE,UAE,Abu Dhabi,-21.068286,-39.888887,university,Indian,61,True,True,False,standard,0.05,0.477,0.919,0.531
+O020,delivery_kitchen,India,India,Mumbai,41.620829,-101.49924,business,Indian,150,True,True,False,central,0.579,0.04,0.082,0.657
+O021,restaurant_bar,Saudi Arabia,Saudi Arabia,Riyadh,-16.616672,73.371786,tourist,Italian,165,True,True,True,cloud,0.457,0.929,0.936,0.009
+O022,restaurant,India,India,Hyderabad,-15.816112,-48.395888,mixed,American,65,True,False,False,cloud,0.285,0.438,0.543,0.303
+O023,restaurant,Saudi Arabia,Saudi Arabia,Riyadh,-8.055912,59.114953,mixed,Italian,165,True,True,False,standard,0.742,0.155,0.282,0.211
+O024,bar,UK,UK,Manchester,10.486815,-52.197262,tourist,International,56,False,True,True,delivery,0.829,0.044,0.334,0.131
+O025,bar,USA,USA,Houston,14.651238,-4.524532,university,Indian,87,False,True,True,central,0.546,0.835,0.583,0.148
+O026,restaurant,India,India,Pune,-2.181364,131.933763,tourist,International,50,True,False,False,central,0.682,0.667,0.354,0.56
+O027,delivery_kitchen,UAE,UAE,Abu Dhabi,48.318744,-56.08092,residential,Italian,120,True,False,False,standard,0.179,0.924,0.782,0.412
+O028,restaurant_bar,USA,USA,Los Angeles,35.863706,-90.814181,residential,International,49,True,False,True,central,0.2,0.918,0.35,0.821
+O029,bar,USA,USA,Los Angeles,24.402986,-12.414186,business,American,65,False,False,True,cloud,0.351,0.509,0.68,0.844
+O030,restaurant,UK,UK,Manchester,43.933457,-49.471897,business,Mexican,165,True,True,False,delivery,0.346,0.786,0.436,0.984
+O031,cloud_kitchen,India,India,Hyderabad,-17.89291,-108.015636,mixed,Chinese,30,True,True,False,central,0.364,0.07,0.664,0.33
+O032,restaurant,UK,UK,Manchester,10.641025,60.061084,tourist,American,236,True,True,False,central,0.192,0.665,0.379,0.748
+O033,delivery_kitchen,USA,USA,New York,-7.914511,27.943048,mixed,Indian,185,True,True,False,delivery,0.786,0.607,0.322,0.442
+O034,delivery_kitchen,USA,USA,Chicago,36.436186,139.154641,university,Arabic,116,True,True,False,cloud,0.515,0.633,0.335,0.818
+O035,restaurant_bar,USA,USA,Los Angeles,37.590661,-80.21443,residential,Indian,155,True,False,True,standard,0.455,0.886,0.576,0.718
+O036,cloud_kitchen,UAE,UAE,Dubai,-13.0414,57.135663,university,Indian,84,True,False,False,central,0.176,0.958,0.518,0.05
+O037,restaurant,USA,USA,Los Angeles,-22.99948,5.453674,university,Mexican,192,True,False,False,delivery,0.613,0.719,0.505,0.831
+O038,cloud_kitchen,Saudi Arabia,Saudi Arabia,Jeddah,31.92899,8.162098,residential,American,156,True,False,False,cloud,0.766,0.521,0.627,0.275
+O039,restaurant_bar,India,India,Bangalore,-10.54564,-33.678417,residential,Mexican,71,True,True,True,central,0.383,0.153,0.214,0.415
+O040,delivery_kitchen,UK,UK,Manchester,2.419681,-64.154715,university,Chinese,229,True,False,False,standard,0.857,0.766,0.38,0.006
+O041,restaurant_bar,UK,UK,Birmingham,41.810316,137.426191,university,Chinese,142,True,True,True,cloud,0.436,0.029,0.336,0.679
+O042,bar,UAE,UAE,Dubai,47.758746,144.794934,university,Mexican,43,False,False,True,standard,0.084,0.429,0.867,0.182
+O043,cloud_kitchen,USA,USA,Houston,-15.950574,-31.751633,tourist,International,224,True,True,False,delivery,0.252,0.082,0.019,0.539
+O044,bar,UK,UK,Birmingham,35.310974,55.973757,business,International,45,False,False,True,central,0.839,0.621,0.239,0.474
+O045,delivery_kitchen,India,India,Hyderabad,6.853059,-50.814202,residential,American,115,True,True,False,standard,0.778,0.164,0.311,0.579
+O046,delivery_kitchen,UK,UK,London,0.6989,73.05397,university,Indian,154,True,True,False,cloud,0.85,0.6,0.121,0.984
+O047,restaurant_bar,India,India,Mumbai,3.554021,-19.945863,mixed,Mexican,204,True,True,True,delivery,0.822,0.106,0.961,0.636
+O048,bar,UAE,UAE,Sharjah,-19.147674,20.871622,university,Arabic,168,False,True,True,delivery,0.465,0.826,0.592,0.322
+O049,restaurant,USA,USA,Los Angeles,44.346807,-54.156871,tourist,Chinese,224,True,True,False,delivery,0.851,0.182,0.212,0.798
+O050,restaurant_bar,UK,UK,Manchester,28.106538,-45.407485,mixed,Indian,294,True,False,True,standard,0.241,0.406,0.555,0.24
+O051,cloud_kitchen,Singapore,Singapore,Singapore,36.363958,-94.875595,university,Italian,237,True,True,False,cloud,0.664,0.369,0.553,0.344
+O052,restaurant_bar,Saudi Arabia,Saudi Arabia,Jeddah,28.256945,-46.852565,tourist,American,148,True,True,True,central,0.316,0.743,0.951,0.69
+O053,bar,USA,USA,Chicago,-10.115034,39.188465,university,International,298,False,True,True,standard,0.833,0.296,0.361,0.302
+O054,bar,Saudi Arabia,Saudi Arabia,Jeddah,-30.903587,-105.277975,tourist,American,94,False,True,True,delivery,0.103,0.012,0.284,0.479
+O055,bar,UK,UK,Manchester,-12.276945,112.6652,business,Indian,63,False,True,True,standard,0.577,0.686,0.152,0.811
+O056,restaurant,UK,UK,London,-24.339359,86.39973,residential,Mexican,145,True,False,False,delivery,0.451,0.443,0.86,0.99
+O057,delivery_kitchen,UK,UK,London,-29.579273,139.22937,mixed,Indian,136,True,True,False,cloud,0.66,0.157,0.174,0.075
+O058,cloud_kitchen,India,India,Delhi,27.043402,6.876369,university,Indian,148,True,True,False,cloud,0.703,0.454,0.687,0.924
+O059,cloud_kitchen,USA,USA,Chicago,14.010614,54.861375,business,American,102,True,True,False,central,0.793,0.595,0.824,0.921
+O060,restaurant,UAE,UAE,Sharjah,26.981019,68.928095,university,American,286,True,True,False,delivery,0.08,0.04,0.432,0.322
+O061,restaurant,USA,USA,Houston,-14.396803,62.060559,business,International,40,True,False,False,cloud,0.576,0.763,0.175,0.519
+O062,restaurant_bar,UAE,UAE,Sharjah,54.725093,-2.311053,residential,International,281,True,False,True,delivery,0.348,0.333,0.67,0.858
+O063,cloud_kitchen,UK,UK,Manchester,-9.060398,135.202256,university,International,48,True,True,False,cloud,0.252,0.116,0.773,0.865
+O064,delivery_kitchen,India,India,Delhi,2.192281,-69.352714,university,American,285,True,True,False,standard,0.204,0.549,0.928,0.438
+O065,restaurant,Singapore,Singapore,Singapore,52.583213,44.39535,business,Italian,111,True,True,False,standard,0.552,0.093,0.992,0.913
+O066,restaurant,UAE,UAE,Sharjah,9.853795,73.482898,residential,Mexican,169,True,True,False,delivery,0.98,0.244,0.551,0.384
+O067,bar,Saudi Arabia,Saudi Arabia,Riyadh,-10.137734,93.301669,business,Chinese,204,False,False,True,cloud,0.821,0.283,0.299,0.587
+O068,bar,Singapore,Singapore,Singapore,13.472252,-26.816536,university,Mexican,223,False,True,True,cloud,0.87,0.981,0.239,0.383
+O069,restaurant,UAE,UAE,Abu Dhabi,32.023464,70.411528,tourist,International,225,True,True,False,central,0.495,0.037,0.502,0.59
+O070,cloud_kitchen,India,India,Hyderabad,12.335598,3.37058,business,Arabic,103,True,True,False,central,0.075,0.782,0.265,0.623
+O071,restaurant,UAE,UAE,Dubai,41.71072,112.02239,tourist,Chinese,192,True,True,False,delivery,0.872,0.036,0.068,0.631
+O072,bar,UK,UK,London,4.057432,-93.420356,business,Arabic,81,False,True,True,cloud,0.903,0.046,0.796,0.293
+O073,cloud_kitchen,UK,UK,Birmingham,-13.022231,-8.746028,residential,Arabic,122,True,True,False,standard,0.609,0.383,0.683,0.498
+O074,bar,India,India,Pune,22.411417,4.084035,university,Arabic,34,False,False,True,delivery,0.901,0.678,0.158,0.442
+O075,delivery_kitchen,UK,UK,Birmingham,22.504483,-5.436587,tourist,American,263,True,False,False,central,0.999,0.853,0.107,0.381
+O076,delivery_kitchen,UK,UK,Birmingham,54.342284,-40.287696,tourist,International,232,True,True,False,standard,0.911,0.745,0.833,0.903
+O077,delivery_kitchen,USA,USA,Los Angeles,-15.289591,-68.664363,tourist,American,100,True,True,False,standard,0.309,0.441,0.58,0.732
+O078,restaurant_bar,India,India,Bangalore,32.273278,-72.577181,tourist,Italian,217,True,True,True,cloud,0.83,0.257,0.825,0.482
+O079,restaurant_bar,UK,UK,London,7.149825,-99.669173,business,International,145,True,False,True,delivery,0.967,0.805,0.366,0.791
+O080,restaurant_bar,India,India,Delhi,-23.877014,-20.481872,mixed,Arabic,164,True,True,True,cloud,0.108,0.234,0.025,0.884
+O081,restaurant_bar,Saudi Arabia,Saudi Arabia,Jeddah,-15.076952,-102.931399,mixed,International,267,True,False,True,cloud,0.649,0.117,0.045,0.037
+O082,restaurant,Singapore,Singapore,Singapore,-13.867997,25.137584,business,Chinese,262,True,True,False,delivery,0.587,0.727,0.885,0.655
+O083,delivery_kitchen,Singapore,Singapore,Singapore,49.514776,-44.470162,university,Arabic,219,True,True,False,delivery,0.951,0.855,0.099,0.686
+O084,restaurant_bar,Saudi Arabia,Saudi Arabia,Jeddah,0.832568,-68.751688,business,Indian,262,True,True,True,central,0.642,0.597,0.021,0.787
+O085,bar,USA,USA,Los Angeles,-16.531498,104.050816,mixed,Mexican,136,False,True,True,central,0.329,0.148,0.901,0.003
+O086,bar,India,India,Pune,-12.441122,-72.885777,mixed,Arabic,43,False,True,True,cloud,0.79,0.238,0.324,0.174
+O087,bar,India,India,Mumbai,12.347697,81.329624,university,Chinese,259,False,False,True,standard,0.452,0.222,0.615,0.727
+O088,restaurant_bar,Saudi Arabia,Saudi Arabia,Riyadh,22.900662,-111.589327,university,Chinese,235,True,True,True,standard,0.49,0.91,0.073,0.081
+O089,restaurant,India,India,Pune,-10.24856,50.930716,residential,Mexican,196,True,True,False,cloud,0.454,0.605,0.099,0.702
+O090,bar,Saudi Arabia,Saudi Arabia,Jeddah,5.639942,-58.306735,university,American,262,False,True,True,standard,0.313,0.313,0.255,0.954
+O091,restaurant,Singapore,Singapore,Singapore,39.85947,-94.827873,business,Indian,220,True,False,False,standard,0.586,0.562,0.33,0.122
+O092,cloud_kitchen,UK,UK,Birmingham,52.155876,42.110725,business,American,83,True,True,False,central,0.155,0.482,0.847,0.35
+O093,restaurant_bar,Saudi Arabia,Saudi Arabia,Jeddah,33.634507,35.007001,business,International,249,True,False,True,standard,0.609,0.658,0.693,0.029
+O094,restaurant_bar,USA,USA,Houston,-3.407892,-71.020499,tourist,Italian,235,True,True,True,standard,0.092,0.53,0.376,0.454
+O095,restaurant_bar,USA,USA,New York,29.943637,89.745617,tourist,Mexican,73,True,False,True,central,0.157,0.618,0.674,0.272
+O096,cloud_kitchen,UAE,UAE,Abu Dhabi,4.783977,-46.244952,mixed,International,292,True,True,False,delivery,0.111,0.678,0.593,0.527
+O097,restaurant,UK,UK,London,0.573706,41.817738,residential,Indian,134,True,True,False,central,0.767,0.764,0.289,0.12
+O098,cloud_kitchen,Singapore,Singapore,Singapore,-23.373287,23.797234,residential,Italian,286,True,True,False,cloud,0.072,0.862,0.042,0.019
+O099,restaurant_bar,India,India,Bangalore,3.635586,-10.805821,mixed,Arabic,243,True,True,True,delivery,0.021,0.325,0.801,0.618
+O100,restaurant,UK,UK,Birmingham,41.003592,-54.304552,university,Mexican,235,True,True,False,delivery,0.871,0.746,0.222,0.779
+O101,delivery_kitchen,India,India,Bangalore,12.754434,-67.645999,business,International,208,True,True,False,central,0.236,0.146,0.197,0.602
+O102,bar,India,India,Bangalore,6.755776,32.20858,university,Mexican,259,False,True,True,cloud,0.864,0.627,0.151,0.068
+O103,restaurant_bar,UAE,UAE,Sharjah,18.227778,-24.9756,tourist,Indian,188,True,True,True,standard,0.057,0.832,0.077,0.864
+O104,delivery_kitchen,India,India,Bangalore,10.636104,4.932148,mixed,Mexican,51,True,True,False,central,0.322,0.476,0.151,0.062
+O105,restaurant_bar,India,India,Hyderabad,10.40941,-73.409094,business,Italian,254,True,False,True,central,0.364,0.918,0.387,0.774
+O106,restaurant_bar,India,India,Mumbai,-5.327832,30.650067,business,Chinese,175,True,True,True,central,0.333,0.583,0.141,0.35
+O107,bar,UAE,UAE,Dubai,28.795061,-97.125867,mixed,Mexican,222,False,True,True,cloud,0.813,0.67,0.829,0.739
+O108,restaurant,Saudi Arabia,Saudi Arabia,Riyadh,10.763964,-115.077755,university,American,122,True,False,False,cloud,0.948,0.486,0.227,0.138
+O109,restaurant_bar,India,India,Bangalore,10.692074,25.738105,business,Arabic,299,True,True,True,cloud,0.876,0.618,0.597,0.154
+O110,delivery_kitchen,USA,USA,New York,29.90647,-108.203044,residential,American,151,True,False,False,cloud,0.752,0.784,0.234,0.239
+O111,bar,Singapore,Singapore,Singapore,26.047614,34.013236,tourist,Chinese,266,False,False,True,delivery,0.503,0.419,0.162,0.2
+O112,restaurant_bar,India,India,Pune,22.706113,116.011575,business,Mexican,82,True,True,True,standard,0.285,0.763,0.273,0.905
+O113,cloud_kitchen,India,India,Pune,50.177194,-60.049738,business,Chinese,208,True,False,False,delivery,0.053,0.502,0.236,0.995
+O114,bar,UK,UK,Birmingham,-6.318361,-93.247556,business,Arabic,201,False,False,True,central,0.038,0.917,0.472,0.831
+O115,cloud_kitchen,Singapore,Singapore,Singapore,-34.527392,-98.609042,mixed,American,140,True,False,False,delivery,0.111,0.288,0.301,0.048
+O116,delivery_kitchen,UAE,UAE,Abu Dhabi,-29.347356,105.905685,university,Chinese,38,True,True,False,central,0.719,0.291,0.002,0.353
+O117,bar,UAE,UAE,Abu Dhabi,12.11361,-22.636985,business,Mexican,289,False,False,True,standard,0.39,0.47,0.636,0.981
+O118,restaurant,USA,USA,Houston,35.966801,-26.903327,tourist,Arabic,83,True,False,False,cloud,0.133,0.352,0.339,0.643
+O119,cloud_kitchen,UAE,UAE,Sharjah,38.034791,-102.962855,residential,International,264,True,True,False,central,0.044,0.199,0.042,0.933
+O120,cloud_kitchen,Saudi Arabia,Saudi Arabia,Riyadh,7.605979,-110.112392,mixed,Arabic,127,True,True,False,standard,0.866,0.332,0.124,0.368
+O121,cloud_kitchen,UAE,UAE,Dubai,-4.486703,-69.559351,university,Arabic,284,True,True,False,cloud,0.801,0.727,0.079,0.602
+O122,delivery_kitchen,USA,USA,New York,-6.090971,-98.381394,tourist,Arabic,181,True,True,False,delivery,0.167,0.444,0.447,0.727
+O123,delivery_kitchen,UK,UK,Birmingham,-10.290018,144.607365,university,Indian,68,True,True,False,delivery,0.363,0.801,0.679,0.953
+O124,delivery_kitchen,India,India,Pune,-31.868093,-101.846992,university,International,217,True,True,False,standard,0.605,0.679,0.949,0.372
+O125,delivery_kitchen,India,India,Bangalore,12.651389,-12.530808,residential,Arabic,172,True,True,False,standard,0.026,0.186,0.518,0.914
+O126,restaurant_bar,India,India,Hyderabad,28.363403,-62.065985,tourist,Mexican,176,True,True,True,delivery,0.2,0.136,0.074,0.173
+O127,restaurant,UAE,UAE,Sharjah,25.105581,71.575931,tourist,Mexican,178,True,False,False,central,0.712,0.927,0.638,0.794
+O128,bar,Saudi Arabia,Saudi Arabia,Riyadh,53.661929,93.857732,business,Italian,282,False,True,True,cloud,0.467,0.983,0.13,0.884
+O129,restaurant_bar,India,India,Bangalore,54.963554,74.094808,university,Mexican,240,True,False,True,standard,0.125,0.317,0.074,0.466
+O130,restaurant_bar,Saudi Arabia,Saudi Arabia,Riyadh,44.016414,90.670991,residential,Arabic,123,True,False,True,central,0.433,0.911,0.055,0.124
