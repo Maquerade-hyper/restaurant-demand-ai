@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment secrets
+.env
+
+# Data
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Generated models
+models/candidates/*
+models/champion/*
+models/archive/*
+
+# Runtime
+logs/*
+artifacts/*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
