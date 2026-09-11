@@ -9,7 +9,9 @@ from app.forecasting.xgboost_features import (
 from app.forecasting.xgboost_service import (
     XGBoostForecastService,
 )
-from app.forecasting.metrics import evaluate_forecast
+from app.forecasting.diagnostic_report import (
+    create_diagnostic_report,
+)
 
 
 def main():
@@ -26,8 +28,9 @@ def main():
         "date"
     )
 
-    cutoff = dataset["date"].max() - pd.Timedelta(
-        days=28
+    cutoff = (
+        dataset["date"].max()
+        - pd.Timedelta(days=28)
     )
 
     train = dataset[
@@ -42,39 +45,96 @@ def main():
 
     service.train(train)
 
-    predictions = service.predict(test)
-
-    actual = test[
-        "quantity_sold"
-    ].to_numpy()
-
-    metrics = evaluate_forecast(
-        actual,
-        predictions,
+    predictions = service.predict(
+        test
     )
 
-    print("\nXGBOOST RESULTS")
-    print("================")
+    diagnostic_df = test.copy()
 
-    for name, value in metrics.items():
+    diagnostic_df["prediction"] = (
+        predictions
+    )
+
+    report = create_diagnostic_report(
+        diagnostic_df
+    )
+
+    print("\n==============================")
+    print("XGBOOST DIAGNOSTIC REPORT")
+    print("==============================")
+
+    print("\nOVERALL")
+    print("--------")
+
+    for key, value in report[
+        "overall"
+    ].items():
+
         print(
-            f"{name.upper()}: "
+            f"{key.upper()}: "
             f"{value:.4f}"
         )
 
-    importance = (
-        service.model
-        .feature_importance()
-        .head(15)
+    print("\nBIAS")
+    print("----")
+
+    for key, value in report[
+        "bias"
+    ].items():
+
+        print(
+            f"{key}: "
+            f"{value:.4f}"
+        )
+
+    print("\nHIGH DEMAND")
+    print("-----------")
+
+    for key, value in report[
+        "high_demand"
+    ].items():
+
+        if isinstance(value, float):
+            print(
+                f"{key}: "
+                f"{value:.4f}"
+            )
+        else:
+            print(
+                f"{key}: {value}"
+            )
+
+    print(
+        "\nSPIKE RECALL: "
+        f"{report['spike_recall']:.4f}"
+    )
+
+    print("\nWORST OUTLETS")
+    print("-------------")
+
+    print(
+        report[
+            "outlet_diagnostics"
+        ].head(10).to_string(index=False)
+    )
+
+    print("\nWORST PRODUCTS")
+    print("--------------")
+
+    print(
+        report[
+            "product_diagnostics"
+        ].head(10).to_string(index=False)
     )
 
     print("\nTOP FEATURES")
-    print("============")
+    print("------------")
 
     print(
-        importance.to_string(
-            index=False
-        )
+        service.model
+        .feature_importance()
+        .head(15)
+        .to_string(index=False)
     )
 
 
