@@ -2,6 +2,7 @@ import math
 import random
 from datetime import date
 from app.data.generators.calendar_behavior import calendar_multiplier
+from app.data.generators.external_behavior import external_multiplier
 
 
 WEEKDAY_MULTIPLIERS = {
@@ -108,6 +109,18 @@ def demand_multiplier(
     holiday_type: str | None = None,
     holiday_importance: float = 0.0,
     religious_period: str | None = None,
+    temperature: float | None = None,
+    precipitation: float = 0.0,
+    humidity: float = 50.0,
+    weather_condition: str | None = None,
+    tourism_index: float = 0.0,
+    business_index: float = 0.0,
+    student_index: float = 0.0,
+    population_density: float = 0.0,
+    discount: float = 0.0,
+    promotion_type: str | None = None,
+    event_importance: float = 0.0,
+    event_distance_km: float = 100.0,
 ) -> float:
 
     multiplier = 1.0
@@ -129,6 +142,21 @@ def demand_multiplier(
         business_area=business_area,
         residential_area=residential_area,
         student_area=student_area,
+    )
+
+    multiplier *= external_multiplier(
+        temperature=temperature,
+        precipitation=precipitation,
+        humidity=humidity,
+        weather_condition=weather_condition,
+        tourism_index=tourism_index,
+        business_index=business_index,
+        student_index=student_index,
+        population_density=population_density,
+        discount=discount,
+        promotion_type=promotion_type,
+        event_importance=event_importance,
+        event_distance_km=event_distance_km,
     )
 
     return max(multiplier, 0.1)
