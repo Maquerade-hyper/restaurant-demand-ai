@@ -1,24 +1,44 @@
-from pathlib import Path
-
 from app.data.generators.outlets import generate_outlets
 from app.data.generators.products import generate_products
+from app.data.generators.sales import generate_sales
 
 
-OUTPUT_DIR = Path("data/synthetic")
-
-
-def main() -> None:
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+def main():
 
     outlets = generate_outlets()
     products = generate_products()
 
-    outlets.to_csv(OUTPUT_DIR / "outlets.csv", index=False)
-    products.to_csv(OUTPUT_DIR / "products.csv", index=False)
+    sales = generate_sales(
+        outlets,
+        products,
+    )
 
-    print(f"Generated {len(outlets)} outlets")
-    print(f"Generated {len(products)} products")
-    print(f"Output: {OUTPUT_DIR.resolve()}")
+    outlets.to_csv(
+        "data/synthetic/outlets.csv",
+        index=False,
+    )
+
+    products.to_csv(
+        "data/synthetic/products.csv",
+        index=False,
+    )
+
+    sales.to_csv(
+        "data/synthetic/sales.csv",
+        index=False,
+    )
+
+    print(
+        f"OUTLETS: {len(outlets)}"
+    )
+
+    print(
+        f"PRODUCTS: {len(products)}"
+    )
+
+    print(
+        f"SALES ROWS: {len(sales)}"
+    )
 
 
 if __name__ == "__main__":
