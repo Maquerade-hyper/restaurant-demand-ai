@@ -2,14 +2,9 @@ from __future__ import annotations
 
 from fastapi import FastAPI
 
-
-from app.api.autonomous import (
-    router as autonomous_router,
-)
-
-from app.api.daily_intelligence import (
-    router as daily_intelligence_router,
-)
+from app.api.autonomous import router as autonomous_router
+from app.api.client_intelligence import router as client_intelligence_router
+from app.api.daily_intelligence import router as daily_intelligence_router
 
 
 app = FastAPI(
@@ -21,14 +16,9 @@ app = FastAPI(
     version="1.0.0",
 )
 
-
-app.include_router(
-    autonomous_router
-)
-
-app.include_router(
-    daily_intelligence_router
-)
+app.include_router(autonomous_router)
+app.include_router(daily_intelligence_router)
+app.include_router(client_intelligence_router)
 
 
 @app.get("/")
