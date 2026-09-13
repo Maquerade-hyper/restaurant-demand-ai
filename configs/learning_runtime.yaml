@@ -1,0 +1,30 @@
+learning_runtime:
+  enabled: true
+
+  scan_interval_seconds: 60
+
+  data:
+    incoming_path: data/client/INCOMING
+    processed_path: data/client/PROCESSED
+    rejected_path: data/client/REJECTED
+    archive_path: data/client/ARCHIVE
+
+  training:
+    enabled: true
+
+    allow_synthetic_training: false
+
+    require_real_client_data: true
+
+    minimum_rows: 1000
+
+  model:
+    candidate_path: models/candidates
+    champion_path: models/champion
+    archive_path: models/archive
+
+  governance:
+    candidate_required: true
+    automatic_promotion: true
+    minimum_improvement: 0.02
+    rollback_enabled: true

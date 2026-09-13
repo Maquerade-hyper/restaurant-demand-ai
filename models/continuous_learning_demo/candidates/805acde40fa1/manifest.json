@@ -1,0 +1,30 @@
+{
+  "run_id": "805acde40fa1",
+  "model_name": "xgboost_candidate",
+  "model_type": "XGBRegressor",
+  "candidate_mae": 1.6169954805111235,
+  "candidate_rmse": 2.050917473029803,
+  "candidate_bias": 0.12173077347861967,
+  "champion_mae": 1.5286786194538422,
+  "champion_rmse": 1.988293117509708,
+  "champion_bias": -0.20516861594729383,
+  "improvement_pct": -5.777333439047815,
+  "feature_columns": [
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_7",
+    "lag_14",
+    "lag_28",
+    "rolling_mean_3",
+    "rolling_mean_7",
+    "rolling_mean_14",
+    "rolling_mean_28",
+    "rolling_std_7",
+    "rolling_std_28",
+    "day_of_week",
+    "month",
+    "day_of_year",
+    "is_weekend"
+  ]
+}

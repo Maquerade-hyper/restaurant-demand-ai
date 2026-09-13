@@ -1,6 +1,7 @@
 from app.data.generators.outlets import generate_outlets
 from app.data.generators.products import generate_products
 from app.data.generators.sales import generate_sales
+from app.data.generators.inventory import generate_inventory
 
 
 def main():
@@ -10,6 +11,11 @@ def main():
 
     sales = generate_sales(
         outlets,
+        products,
+    )
+
+    inventory = generate_inventory(
+        sales,
         products,
     )
 
@@ -28,6 +34,11 @@ def main():
         index=False,
     )
 
+    inventory.to_csv(
+        "data/synthetic/inventory.csv",
+        index=False,
+    )
+
     print(
         f"OUTLETS: {len(outlets)}"
     )
@@ -38,6 +49,10 @@ def main():
 
     print(
         f"SALES ROWS: {len(sales)}"
+    )
+
+    print(
+        f"INVENTORY ROWS: {len(inventory)}"
     )
 
 

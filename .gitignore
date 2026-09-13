@@ -2,35 +2,55 @@
 __pycache__/
 *.py[cod]
 *.pyd
+*.so
 
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 env/
 
-# Environment secrets
+# Secrets
 .env
 
-# Data
+# IDE / OS
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+Thumbs.db
+.DS_Store
+
+# Generated / large data
 data/raw/*
 data/interim/*
 data/processed/*
+
+# Synthetic generated datasets
+data/synthetic/*.csv
+data/synthetic/*.parquet
+data/synthetic/*.json
+
+# Client runtime data
+data/client/INCOMING/*
+data/client/PROCESSED/*
+data/client/REJECTED/*
+data/client/ARCHIVE/*
 
 # Generated models
 models/candidates/*
 models/champion/*
 models/archive/*
 
-# Runtime
+# Runtime output
 logs/*
 artifacts/*
 
-# Jupyter
-.ipynb_checkpoints/
-
-# IDE
-.vscode/
-
-# OS
-Thumbs.db
-.DS_Store
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.logmodels/continuous_learning_demo/*
+models/production_demo/*

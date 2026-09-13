@@ -1,0 +1,24 @@
+{
+  "model_name": "production_demo_champion",
+  "run_id": "part29-local-demo",
+  "model_type": "XGBRegressor",
+  "training_rows": 1348,
+  "feature_columns": [
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_7",
+    "lag_14",
+    "lag_28",
+    "rolling_mean_3",
+    "rolling_mean_7",
+    "rolling_mean_14",
+    "rolling_mean_28",
+    "rolling_std_7",
+    "rolling_std_28",
+    "day_of_week",
+    "month",
+    "day_of_year",
+    "is_weekend"
+  ]
+}

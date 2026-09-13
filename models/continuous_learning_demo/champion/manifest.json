@@ -1,0 +1,8 @@
+{
+  "model_name": "initial_champion",
+  "model_type": "XGBRegressor",
+  "training_rows": 3300,
+  "training_end": "2025-10-02 00:00:00",
+  "promoted_at": "20260912T165840Z",
+  "previous_champion": null
+}
